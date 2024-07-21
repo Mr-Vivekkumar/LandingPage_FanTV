@@ -1,0 +1,235 @@
+.fanNetworkContent {
+  padding: 100px 0;
+  background: #2a2a2b;
+}
+.fanNetworkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.fanNetworkTitle {
+  text-align: center;
+  display: grid;
+  gap: 40px;
+}
+
+.fanNetworkImg img {
+  max-width: 892px;
+  width: 100%;
+}
+.fanNetworkImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fanNetworkTitle h2 {
+  max-width: 885px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 38px;
+  background: -webkit-linear-gradient(left, #ffffff, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Nohemi-Regular", sans-serif;
+}
+
+.fanNetworkTitle p {
+  max-width: 786px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  color: #d2d2d2;
+  font-family: "Nohemi-ExtraLight", sans-serif;
+  font-weight: 200;
+}
+.fanNetworkBoxContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.fanNetworkBox {
+  max-width: 392px;
+  width: 100%;
+  border-radius: 24px;
+  height: 256px;
+}
+.fanNetworkBox {
+  padding: 30px;
+}
+.blueBox {
+  background: #6b61ff;
+  color: #edf0ff;
+}
+.colorBox {
+  background: #fe9bf3;
+  color: #1e1e1e;
+}
+.greenBox {
+  background: #adffe4;
+  color: #1e1e1e;
+}
+.fanNetworkBox h2 {
+  font-size: 32px;
+  font-family: "Nohemi-Regular", sans-serif;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.fanNetworkBox p {
+  font-size: 16px;
+  font-family: "Nohemi-Regular", sans-serif;
+  line-height: 20px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+}
+.fanNetworkBoxBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fanNetworkBoxBtn button {
+  background: #ffffff;
+  color: #0c091b;
+  width: 200px;
+  height: 56px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px #8e7af0;
+  gap: 8px;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+.fanNetworkBoxBtn button:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.comingSoonRed {
+  background: #7a186f;
+  border-radius: 12px;
+  padding: 1px 6px;
+  color: #ffc4f8;
+  border: 5px solid #ffc4f8;
+  position: relative;
+  transform: rotate(-12.5deg);
+  left: 20px;
+  bottom: 15px;
+}
+.comingSoon {
+  background: #0a9b6b;
+  border-radius: 12px;
+  padding: 1px 6px;
+  color: #ddfff4;
+  border: 5px solid #6dffcf;
+  position: relative;
+  transform: rotate(-12.5deg);
+  left: 20px;
+  bottom: -8px;
+}
+.fanNetworkBox {
+  position: relative;
+  overflow: hidden;
+}
+.fanNetworkBox::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/Pattern.png) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Media queries for medium screens */
+@media (max-width: 768px) {
+  .fanNetworkContent {
+    padding: 100px 0;
+  }
+
+  .fanNetworkContainer {
+    gap: 40px;
+  }
+
+  .fanNetworkTitle h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .fanNetworkTitle p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .fanNetworkBoxContainer {
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .fanNetworkBox h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .fanNetworkBox p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .fanNetworkBoxBtn button {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+  }
+}
+/* Media queries for small screens */
+@media (max-width: 480px) {
+  .fanNetworkContent {
+    padding: 75px 0;
+  }
+
+  .fanNetworkContainer {
+    gap: 30px;
+  }
+
+  .fanNetworkTitle h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .fanNetworkTitle p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .fanNetworkBoxContainer {
+    gap: 25px;
+  }
+
+  .fanNetworkBox h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .fanNetworkBox p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .fanNetworkBoxBtn button {
+    width: 75%;
+    height: 52px;
+    font-size: 15px;
+  }
+}

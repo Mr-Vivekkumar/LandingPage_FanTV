@@ -1,0 +1,29 @@
+.callToAction {
+  padding: 140px 0;
+}
+
+.callToActionContainer {
+  text-align: center;
+}
+.callToActionContainer h2 {
+  font-size: 32px;
+  line-height: 38px;
+  background: -webkit-linear-gradient(left, #ffffff, #999999);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: "Nohemi-Regular", sans-serif;
+}
+
+.callToActionContainer p {
+  max-width: 786px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 2%;
+  line-height: 20px;
+  color: #d2d2d2;
+  font-family: "Nohemi-ExtraLight", sans-serif;
+  font-weight: 200;
+}

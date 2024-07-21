@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+
+@font-face {
+  font-family: "Nohemi-Regular";
+  src: url("./assets/font/nohemi-font-family/Nohemi-Regular-BF6438cc4d0e493.ttf");
+}
+@font-face {
+  font-family: "Nohemi-ExtraLight";
+  src: url("./assets/font/nohemi-font-family/Nohemi-ExtraLight-BF6438cc57e06d5.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+}

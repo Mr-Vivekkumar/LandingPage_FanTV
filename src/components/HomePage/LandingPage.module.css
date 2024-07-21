@@ -1,0 +1,208 @@
+.bannerContent {
+  padding: 100px 0;
+  text-align: center;
+  background: #1e1e1e;
+  position: relative;
+  background: url(../../assets/images/grid.png) no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.bannerContent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 900px;
+  background: #6b61ff;
+  filter: blur(150px);
+  opacity: 0.3;
+  z-index: -1;
+}
+.bannerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.bannerTitle h2 {
+  font-size: 56px;
+  line-height: 150%;
+  background: -webkit-linear-gradient(left, #ffffff, #6b61ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 1054px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.bannerTitle p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2%;
+  color: #d2d2d2;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Nohemi-Regular", sans-serif;
+}
+.bannerTitle button {
+  background: #6c5ff5;
+  border-color: #6c5ff5;
+  max-width: 200px;
+  width: 100%;
+  height: 56px;
+  border-radius: 50px;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.bannerTitle button:hover {
+  background: transparent;
+  border-color: #6c5ff5;
+  color: #6c5ff5;
+  transition: all 0.5s;
+}
+.bannerImg img {
+  width: 100%;
+}
+
+.bannerContentBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+
+.bannerBox {
+  width: 50%;
+  background: #ffffff;
+  color: #1e1e1e;
+  text-align: start;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bannerBox p {
+  font-size: 32px;
+  margin: 0;
+  font-family: "Nohemi-Regular", sans-serif;
+}
+
+.bannerBox h2 {
+  font-size: 86px;
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.bannerBox:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  background: #6b61ff;
+  width: 350px;
+  height: 150px;
+  filter: blur(100px);
+  z-index: -1;
+}
+.bannerBoxTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bannerBoxTitle img {
+  width: 45px;
+  height: 45px;
+}
+.bannerBoxTitle p span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Mobile Responsive CSS */
+@media (max-width: 768px) {
+  .bannerContent {
+    padding: 50px 0;
+  }
+
+  .bannerTitle {
+    gap: 20px;
+  }
+
+  .bannerTitle h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .bannerTitle p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .bannerTitle button {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .bannerContentBox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bannerBox {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .bannerBox p {
+    font-size: 24px;
+  }
+
+  .bannerBox h2 {
+    font-size: 48px;
+  }
+
+  .bannerBoxTitle p span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerContent::after {
+    width: 200px;
+    height: 200px;
+  }
+  .bannerTitle h2 {
+    font-size: 24px;
+  }
+
+  .bannerTitle p {
+    font-size: 12px;
+  }
+
+  .bannerTitle button {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .bannerBox p {
+    font-size: 20px;
+  }
+
+  .bannerBox h2 {
+    font-size: 36px;
+  }
+}
